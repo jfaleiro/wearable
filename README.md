@@ -3,7 +3,7 @@ Normalization of Wearable Device Data
 
 This work normalizes raw available from experimentation with smartphones during several activities and published in the [Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#) provided by the University of California, Irvine.
 
-In the author's words, this "...experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data."[1]
+In the author's words, these "experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data."[1]
 
 How Does the Script Work
 ------------------------
@@ -41,10 +41,10 @@ The final data set provided after all these steps is incredibly simple and can b
 
 * variable: one of the measurement variables, valued from `tBodyAcc_mean_X:fBodyBodyGyroJerkMag_std`
 * activity: one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-* subject: an identifier of the subject in play in that experiment
+* subject: an identifier of the subject in play during those phases and experiments
 * mean: the mean of the variable across all phases and experiments
 
-The resut of overall computation is available in final result file `tidy_data.txt` 
+The resut of overall computation is saved and made available in the final result file `tidy_data.txt`, under the current directory.
 
 References
 ----------
