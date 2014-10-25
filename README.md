@@ -12,14 +12,14 @@ Just execute `./run_analysis.R` and the script will go through all stages, from 
 
 1. Downloading bulk zip file with all data: If the file cannot be found on the local directory, it is downloaded from UCI and saved locally
 1. Unzipping data: If the local directory is not found, the zipped file is unzipped on the default location
-1. Load phase independent data
+1. Load phase-independent data
 
     1. Labels for each activity performed (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). Labels are needed for later enrichement of the tidy data set. Activity labels are collected from `activity_labels.txt`
     1. Labels for each of the features, represented on the feature vector in each of the experiments, loaded from `features.txt`
     1. Filter features relevant to this exercise, only features related to mean and standard deviation.
     
     
-1. Load phase dependent data: for each of the phases, training and test. In each phase an observation is related to an experiment, and the handling of each observation goes through the following steps:
+1. Load phase-dependent data: We decided to name each of the sections in the raw data as a phase. For each of the phases, training and test, an observation is related to an experiment. The handling of  observations in each of the phases go through the following steps:
 
     1. Load the identifier of the subject in each experiment, provided in `<phase>/subject_<phase>.txt`
     1. Load the activity on each experiment, provided in `<phase>/y_<phase>.txt`
@@ -39,10 +39,10 @@ Code Book
 
 The final data set provided after all these steps is incredibly simple and can be sinthetized by just four columns:
 
-* variable: one of the measurement variables, valued from `tBodyAcc_mean_X:fBodyBodyGyroJerkMag_std`
-* activity: one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-* subject: an identifier of the subject in play during those phases and experiments
-* mean: the mean of the variable across all phases and experiments
+* `variable`: One of the measurement variables, valued from `tBodyAcc_mean_X:fBodyBodyGyroJerkMag_std`
+* `activity`: The label of the activity, one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+* `subject`: An identifier of the subject in play during those phases and experiments
+* `mean`: The mean of the variable across all phases and experiments. Unit is the same of the specific variable in the raw data.
 
 The resut of overall computation is saved and made available in the final result file `tidy_data.txt`, under the current directory.
 
