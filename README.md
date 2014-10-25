@@ -19,7 +19,6 @@ Just execute `./run_analysis.R` and the script will go through all stages, from 
     1. Filter features relevant to this exercise, only features related to mean and standard deviation.
     
     
-    
 1. Load phase dependent data: for each of the phases, training and test. In each phase an observation is related to an experiment, and the handling of each observation goes through the following steps:
 
     1. Load the identifier of the subject in each experiment, provided in `<phase>/subject_<phase>.txt`
@@ -47,5 +46,7 @@ The final data set provided after all these steps is incredibly simple and can b
 
 The resut of overall computation is available in final result file `tidy_data.txt` 
 
-To execute 
+References
+----------
+
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012

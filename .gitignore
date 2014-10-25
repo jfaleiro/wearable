@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 getdata-projectfiles-UCI HAR Dataset.zip
+.DS_Store
+README.html
+UCI HAR Dataset
+tidy_data.txt
