@@ -8,7 +8,7 @@ In the author's words, this "...experiments have been carried out with a group o
 How Does the Script Work
 ------------------------
 
-Just execute `./run_analysis.R` and the script will go through all stages, from downloading raw data, to normalization, to generation of the final tidy data file:
+Just execute `./run_analysis.R` and the script will go through all stages, from downloading raw data, to normalization, to generation of the final tidy data file. The specific steps are outlined in details below:
 
 1. Downloading bulk zip file with all data: If the file cannot be found on the local directory, it is downloaded from UCI and saved locally
 1. Unzipping data: If the local directory is not found, the zipped file is unzipped on the default location
